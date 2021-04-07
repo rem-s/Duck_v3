@@ -14,6 +14,7 @@ This is a tutorial for ROS2
 1. "Introducing turtlesim and rqt" をやる
 
 ### 2-1. (Help) Install VcXsrv (X11 server) to enable GUI
+turtlesimを実行してもwindowが出てこない場合、ここを見て対処してください。(あくまでも１つの例です。)
 - もしも、"QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'" みたいなwarningが出たら<br>
 ```
 export XDG_RUNTIME_DIR=/tmp/runtime-root
