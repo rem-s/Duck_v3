@@ -1,0 +1,9 @@
+version: '3.3'
+services: 
+    ros2:
+        container_name: ros2
+        build: ./ros2
+        tty: true
+        volumes:
+            - ./ros2/src:/root/src
+        
