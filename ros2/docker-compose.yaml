@@ -5,5 +5,5 @@ services:
         build: ./ros2
         tty: true
         volumes:
-            - ./ros2/src:/root/src
+            - ./ros2/duck_ws:/root/duck_ws
         

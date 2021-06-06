@@ -9,7 +9,7 @@ FROM ros:foxy
 
 # General settings
 # ENV ROS_DISTRO foxy
-WORKDIR /root/src
+WORKDIR /root/duck_ws
 
 # libGLのsetting
 ENV XDG_RUNTIME_DIR=/tmp/runtime-root
