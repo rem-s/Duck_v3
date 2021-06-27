@@ -6,6 +6,7 @@ services:
         tty: true
         volumes:
             - ./foxy/duck_ws:/root/duck_ws
+            - /tmp/.X11-unix:/tmp/.X11-unix
         devices:
             - /dev/video0:/dev/video0 # if you use USB camera
             - /dev/input/js0:/dev/input/js0 # if you use Joystick
