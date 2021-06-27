@@ -5,7 +5,7 @@ services:
         build: ./foxy
         tty: true
         volumes:
-            - ./foxy:/root
+            - ./foxy/duck_ws:/root/duck_ws
         devices:
             - /dev/video0:/dev/video0 # if you use USB camera
             - /dev/input/js0:/dev/input/js0 # if you use Joystick

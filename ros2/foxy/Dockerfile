@@ -28,6 +28,7 @@ RUN apt-get install -y \
 # RUN apt-get install -y ros-${ROS_DISTRO}-turtlesim
 RUN apt-get update
 RUN apt-get install -y ros-${ROS_DISTRO}-rqt*
+RUN apt-get update
 
 # Setup ROS2 environment
 RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> ~/.bashrc
