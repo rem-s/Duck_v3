@@ -1,8 +1,0 @@
-/root/duck_ws/build/turtlesim/rosidl_adapter/turtlesim:action/RotateAbsolute.idl
-/root/duck_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Color.idl
-/root/duck_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Pose.idl
-/root/duck_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Kill.idl
-/root/duck_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/SetPen.idl
-/root/duck_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Spawn.idl
-/root/duck_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportAbsolute.idl
-/root/duck_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportRelative.idl
