@@ -25,6 +25,10 @@ RUN apt-get install -y \
       #ros-${ROS_DISTRO}-joy \
       ros-${ROS_DISTRO}-v4l2-camera
 
+# RUN apt-get install -y ros-${ROS_DISTRO}-turtlesim
+RUN apt-get update
+RUN apt-get install -y ros-${ROS_DISTRO}-rqt*
+
 # Setup ROS2 environment
 RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> ~/.bashrc
 
