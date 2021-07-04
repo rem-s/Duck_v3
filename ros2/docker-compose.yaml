@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.4'
 services: 
     ros2:
         container_name: ros2
@@ -10,5 +10,5 @@ services:
         devices:
             - /dev/video0:/dev/video0 # if you use USB camera
             - /dev/input/js0:/dev/input/js0 # if you use Joystick
-network_mode:
-    "host"
+        network_mode: host
+        
