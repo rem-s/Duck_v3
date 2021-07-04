@@ -10,3 +10,5 @@ services:
         devices:
             - /dev/video0:/dev/video0 # if you use USB camera
             - /dev/input/js0:/dev/input/js0 # if you use Joystick
+network_mode:
+    "host"

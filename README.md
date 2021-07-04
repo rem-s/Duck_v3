@@ -27,10 +27,10 @@ This is a tutorial for ROS2.
 
 3. Buildが成功したらコンテナを起動し、2-1.1のブログにかいてあるlistener&talkerのプログラムを実行する。
 
-## 2-2. Do the tutorial
+## 2-2. Do the tutorial(ros2:foxy)
 
 1. GUIの環境を整える(以下のHelpを確認すること)
-2. [Introducing turtlesim and rqt](https://docs.ros.org/en/dashing/Tutorials/Turtlesim/Introducing-Turtlesim.html) で、turtlesimをやる
+2. [Introducing turtlesim and rqt](https://docs.ros.org/en/foxy/Tutorials/Turtlesim/Introducing-Turtlesim.html) で、turtlesimをやる
 
 ## 2-2.1. (Help) Install & run X-server VcXsrv(Windows) or XQuartz(Mac) to enable GUI software
 ```
