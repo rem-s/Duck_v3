@@ -31,6 +31,18 @@ This is a tutorial for ROS2.
 
 1. GUIの環境を整える(以下のHelpを確認すること)
 2. [Introducing turtlesim and rqt](https://docs.ros.org/en/foxy/Tutorials/Turtlesim/Introducing-Turtlesim.html) で、turtlesimをやる
+3. turtlesimの起動方法
+    Xlaunchを起動
+    linuxを起動
+    linux上で
+    　docker ps -a　これでdocker内にあるコンテナがわかる。
+    　docker start コンテナID　dockerで作ったコンテナを起動
+    　docker exec -it コンテナID /bin/bash　起動したコンテナの中に入る
+    　echo $DISPLAY　DISPLAYのアドレスが何に設定されているか見る。
+    　export DISPLAY=アドレス　ディスプレイを設定する
+　   　このとき、powershell上でipconfigを実行して、Wireless LAN adapter Wi-Fi:Ipv4アドレスを取得。
+　   　そのアドレスの末尾に:0.0をつける。
+    　ros2 run turtlesim turtlesim_node　最後にこれを実行するとturtlesimが起動する。
 
 ## 2-2.1. (Help) Install & run X-server VcXsrv(Windows) or XQuartz(Mac) to enable GUI software
 ```
