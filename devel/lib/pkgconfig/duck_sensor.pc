@@ -1,8 +1,0 @@
-prefix=/home/rems/Duck_v3/devel
-
-Name: duck_sensor
-Description: Description of duck_sensor
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
