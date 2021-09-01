@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -115,6 +115,14 @@
 <text x="0" y="-2" size="1.778" layer="27">&gt;VALUE</text>
 </package>
 <package name="L7806CV">
+<description>L7806CV TO-220&lt;br&gt;&lt;br&gt;
+Direction:&lt;br&gt;
+&lt;br&gt;
+OPEN&lt;br&gt;
+-----------&lt;br&gt;
+OUT GND IN&lt;br&gt;
+-----------&lt;br&gt;
+HEATSINK</description>
 <wire x1="0" y1="0" x2="0" y2="2.5" width="0.1524" layer="21"/>
 <wire x1="0" y1="2.5" x2="0" y2="4.5" width="0.1524" layer="21"/>
 <wire x1="0" y1="4.5" x2="10" y2="4.5" width="0.1524" layer="21"/>
@@ -125,6 +133,96 @@
 <pad name="OUTPUT" x="2.5" y="2.5" drill="0.9"/>
 <pad name="GROUND" x="5" y="2.5" drill="0.9"/>
 <pad name="INPUT" x="7.5" y="2.5" drill="0.9"/>
+<text x="0" y="5.08" size="1.778" layer="25">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.778" layer="27">&gt;VALUE</text>
+</package>
+<package name="CKCYU1A">
+<wire x1="0" y1="0" x2="0" y2="17" width="0.1524" layer="21"/>
+<wire x1="0" y1="17" x2="34" y2="17" width="0.1524" layer="21"/>
+<wire x1="34" y1="17" x2="34" y2="0" width="0.1524" layer="21"/>
+<wire x1="34" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<pad name="OUT+" x="-51" y="17" drill="2"/>
+<pad name="OUT-" x="-51" y="0" drill="2"/>
+<pad name="IN+" x="51" y="17" drill="2"/>
+<pad name="IN-" x="51" y="0" drill="2"/>
+<text x="0" y="19.05" size="1.778" layer="25">&gt;NAME</text>
+<text x="24.13" y="19.05" size="1.778" layer="27">&gt;VALUE</text>
+<wire x1="-50.8" y1="15.24" x2="-50.8" y2="13.97" width="0.1524" layer="21"/>
+<wire x1="-50.8" y1="12.7" x2="-50.8" y2="13.97" width="0.1524" layer="21"/>
+<wire x1="-50.8" y1="13.97" x2="-52.07" y2="13.97" width="0.1524" layer="21"/>
+<wire x1="-50.8" y1="13.97" x2="-49.53" y2="13.97" width="0.1524" layer="21"/>
+<wire x1="-52.07" y1="2.54" x2="-49.53" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="50.8" y1="15.24" x2="50.8" y2="13.97" width="0.1524" layer="21"/>
+<wire x1="50.8" y1="12.7" x2="50.8" y2="13.97" width="0.1524" layer="21"/>
+<wire x1="50.8" y1="13.97" x2="49.53" y2="13.97" width="0.1524" layer="21"/>
+<wire x1="50.8" y1="13.97" x2="52.07" y2="13.97" width="0.1524" layer="21"/>
+<wire x1="49.53" y1="2.54" x2="52.07" y2="2.54" width="0.1524" layer="21"/>
+</package>
+<package name="OUTPUT-CONN">
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="17.78" y1="0" x2="11.43" y2="0" width="0.1524" layer="21"/>
+<pad name="6V0" x="2.54" y="2.54" drill="0.8"/>
+<pad name="6V1" x="5.08" y="2.54" drill="0.8"/>
+<pad name="5V0" x="7.62" y="2.54" drill="0.8"/>
+<pad name="5V1" x="10.16" y="2.54" drill="0.8"/>
+<pad name="GND0" x="12.7" y="2.54" drill="0.8"/>
+<pad name="GND1" x="15.24" y="2.54" drill="0.8"/>
+<wire x1="11.43" y1="0" x2="6.35" y2="0" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-5.08" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="0" x2="6.35" y2="-5.08" width="0.1524" layer="21"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-5.08" width="0.1524" layer="21"/>
+<wire x1="17.78" y1="0" x2="17.78" y2="-5.08" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="1.27" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-3.81" x2="2.54" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="8.255" y1="-1.27" x2="6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="-1.27" x2="6.985" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="-2.54" x2="8.255" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="8.255" y1="-2.54" x2="8.255" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="8.255" y1="-3.81" x2="6.985" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="10.795" y1="-1.27" x2="10.795" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="13.335" y1="-1.27" x2="12.065" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="12.065" y1="-1.27" x2="12.065" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="12.065" y1="-3.81" x2="13.335" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="13.335" y1="-3.81" x2="13.335" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="13.335" y1="-2.54" x2="12.7" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="13.97" y1="-3.81" x2="13.97" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="13.97" y1="-1.27" x2="15.24" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="15.24" y1="-3.81" x2="15.24" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="15.875" y1="-1.27" x2="16.51" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="16.51" y1="-1.27" x2="17.145" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="17.145" y1="-1.905" x2="17.145" y2="-3.175" width="0.1524" layer="21"/>
+<wire x1="17.145" y1="-3.175" x2="16.51" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="16.51" y1="-3.81" x2="15.875" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="15.875" y1="-3.81" x2="15.875" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="9.525" y1="-1.27" x2="9.525" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="9.525" y1="-2.54" x2="10.16" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="10.16" y1="-3.81" x2="10.795" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-1.27" x2="3.81" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-2.54" x2="4.445" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="-3.81" x2="5.08" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="5.08" x2="17.78" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="17.78" y1="5.08" x2="17.78" y2="0" width="0.1524" layer="21"/>
+<text x="0" y="8.255" size="1.778" layer="25">&gt;NAME</text>
+<text x="0" y="5.715" size="1.778" layer="27">&gt;VALUE</text>
+</package>
+<package name="T-CONN">
+<pad name="+" x="2.54" y="2.54" drill="2"/>
+<pad name="-" x="7.62" y="2.54" drill="2"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="0" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="0" width="0.1524" layer="21"/>
+<wire x1="10.16" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="-2.54" x2="8.89" y2="-2.54" width="0.1524" layer="21"/>
+<text x="0" y="8.89" size="1.778" layer="25">&gt;NAME</text>
+<text x="0" y="6.35" size="1.778" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -232,7 +330,13 @@
 <gate name="G$1" symbol="CKCYU1A" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="CKCYU1A">
+<connects>
+<connect gate="G$1" pin="5V+" pad="OUT+"/>
+<connect gate="G$1" pin="5V-" pad="OUT-"/>
+<connect gate="G$1" pin="BATT+" pad="IN+"/>
+<connect gate="G$1" pin="BATT-" pad="IN-"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -261,7 +365,15 @@
 <gate name="G$1" symbol="OUTPUT-CONN" x="-5.08" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="OUTPUT-CONN">
+<connects>
+<connect gate="G$1" pin="5V0" pad="5V0"/>
+<connect gate="G$1" pin="5V1" pad="5V1"/>
+<connect gate="G$1" pin="6V0" pad="6V0"/>
+<connect gate="G$1" pin="6V1" pad="6V1"/>
+<connect gate="G$1" pin="GND0" pad="GND0"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -273,7 +385,11 @@
 <gate name="G$1" symbol="T-CONN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="T-CONN">
+<connects>
+<connect gate="G$1" pin="BATT+" pad="+"/>
+<connect gate="G$1" pin="BATT-" pad="-"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
