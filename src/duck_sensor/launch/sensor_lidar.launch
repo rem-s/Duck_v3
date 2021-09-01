@@ -1,0 +1,12 @@
+<?xml version="2.0"?>
+<launch>
+    <arg name="mapping" default="false"/>
+
+    <!-- Execute 'sudo chmod 666 /dev/ttyUSB0' before roslaunch -->
+    <include file="$(find rplidar_ros)/launch/view_rplidar.launch"/>
+    <include if="$(arg mapping)" file="$(find duck_navigation)/launch/create2dmap.launch"/>
+
+    <node pkg="tf" type="static_transform_publisher" name="baselink_to_laserlink" args="0.08 0 0.20 0 0 0 base_link laser 100"/> 
+    <node pkg="tf" type="static_transform_publisher" name="odom_to_baselink" args="0 0 0 0 0 0 odom base_link 100"/>
+
+</launch>

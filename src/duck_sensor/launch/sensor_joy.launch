@@ -1,0 +1,4 @@
+<launch>
+    <node name="joy_print" pkg="duck_sensor" type="sensor_joy" output="screen" />
+    <node name="joy_input" pkg="joy" type="joy_node" />
+</launch>

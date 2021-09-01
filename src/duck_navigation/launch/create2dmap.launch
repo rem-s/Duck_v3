@@ -1,0 +1,7 @@
+<?xml version="2.0"?>
+<launch>
+    <!-- Execute 'sudo chmod 666 /dev/ttyUSB0' before roslaunch -->
+    <!-- <include file="$(find rplidar_ros)/launch/view_rplidar.launch"/> -->
+    <include file="$(find duck_navigation)/launch/gmapping.launch"/>
+
+</launch>

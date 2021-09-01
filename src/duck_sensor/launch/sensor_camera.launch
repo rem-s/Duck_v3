@@ -1,0 +1,6 @@
+<launch>
+    <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen">
+        <param name="pixel_format" value="yuyv" />
+    </node>
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find duck_sensor)/config/camera.rviz"/>
+</launch>
