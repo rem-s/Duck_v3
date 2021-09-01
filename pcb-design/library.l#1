@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -74,15 +74,15 @@
 <library>
 <packages>
 <package name="15PB054-01050">
-<wire x1="0" y1="-0.5" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="15" width="0.127" layer="21"/>
-<wire x1="0" y1="15" x2="54" y2="15" width="0.127" layer="21"/>
-<wire x1="54" y1="15" x2="54" y2="0" width="0.127" layer="21"/>
-<wire x1="54" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<pad name="NC1" x="12" y="3.5" drill="1.5"/>
-<pad name="NC2" x="42" y="3.5" drill="1.5"/>
-<text x="1" y="16" size="1.27" layer="25">&gt;NAME</text>
-<text x="47.5" y="16" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-27" y1="-0.5" x2="-27" y2="0" width="0.127" layer="21"/>
+<wire x1="-27" y1="0" x2="-27" y2="15" width="0.127" layer="21"/>
+<wire x1="-27" y1="15" x2="27" y2="15" width="0.127" layer="21"/>
+<wire x1="27" y1="15" x2="27" y2="0" width="0.127" layer="21"/>
+<wire x1="27" y1="0" x2="-27" y2="0" width="0.127" layer="21"/>
+<pad name="NC1" x="-15" y="3.5" drill="1.5"/>
+<pad name="NC2" x="15" y="3.5" drill="1.5"/>
+<text x="-26" y="16" size="1.27" layer="25">&gt;NAME</text>
+<text x="20.5" y="16" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="C-100μF">
 <circle x="4" y="4" radius="4" width="0.1524" layer="21"/>
@@ -123,18 +123,15 @@ OPEN&lt;br&gt;
 OUT GND IN&lt;br&gt;
 -----------&lt;br&gt;
 HEATSINK</description>
-<wire x1="0" y1="0" x2="0" y2="2.5" width="0.1524" layer="21"/>
-<wire x1="0" y1="2.5" x2="0" y2="4.5" width="0.1524" layer="21"/>
-<wire x1="0" y1="4.5" x2="10" y2="4.5" width="0.1524" layer="21"/>
-<wire x1="10" y1="4.5" x2="10" y2="2.5" width="0.1524" layer="21"/>
-<wire x1="10" y1="2.5" x2="10" y2="0" width="0.1524" layer="21"/>
-<wire x1="10" y1="0" x2="5" y2="0" width="0.1524" layer="21"/>
-<wire x1="5" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
-<pad name="OUTPUT" x="2.5" y="2.5" drill="0.9"/>
-<pad name="GROUND" x="5" y="2.5" drill="0.9"/>
-<pad name="INPUT" x="7.5" y="2.5" drill="0.9"/>
-<text x="0" y="5.08" size="1.778" layer="25">&gt;NAME</text>
-<text x="0" y="-2.54" size="1.778" layer="27">&gt;VALUE</text>
+<wire x1="-5" y1="0" x2="-5" y2="4.5" width="0.1524" layer="21"/>
+<wire x1="-5" y1="4.5" x2="5" y2="4.5" width="0.1524" layer="21"/>
+<wire x1="5" y1="4.5" x2="5" y2="0" width="0.1524" layer="21"/>
+<wire x1="5" y1="0" x2="-5" y2="0" width="0.1524" layer="21"/>
+<pad name="OUTPUT" x="-2.5" y="2.5" drill="0.9"/>
+<pad name="GROUND" x="0" y="2.5" drill="0.9"/>
+<pad name="INPUT" x="2.5" y="2.5" drill="0.9"/>
+<text x="-5" y="10.08" size="1.778" layer="25">&gt;NAME</text>
+<text x="-5" y="7.46" size="1.778" layer="27">&gt;VALUE</text>
 </package>
 <package name="CKCYU1A">
 <wire x1="0" y1="0" x2="0" y2="17" width="0.1524" layer="21"/>
@@ -236,6 +233,8 @@ HEATSINK</description>
 <pin name="BATT+" x="30.48" y="10.16" length="middle" direction="in" rot="R180"/>
 <pin name="BATT-" x="30.48" y="2.54" length="middle" direction="in" rot="R180"/>
 <text x="7.62" y="5.08" size="1.778" layer="94">CKCYU1A</text>
+<text x="0" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="15PB054-01050">
 <wire x1="0" y1="0" x2="0" y2="10.16" width="0.254" layer="94"/>
@@ -245,6 +244,8 @@ HEATSINK</description>
 <text x="2.54" y="5.08" size="1.27" layer="94">15PB054-01050</text>
 <pin name="P$1" x="27.94" y="7.62" length="middle" direction="nc" rot="R180"/>
 <pin name="P$2" x="27.94" y="2.54" length="middle" direction="nc" rot="R180"/>
+<text x="0" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="L7806CV">
 <wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
@@ -255,6 +256,8 @@ HEATSINK</description>
 <pin name="GND" x="33.02" y="7.62" length="middle" direction="out" rot="R180"/>
 <pin name="OUTPUT" x="33.02" y="2.54" length="middle" direction="out" rot="R180"/>
 <text x="5.08" y="7.62" size="1.778" layer="94">L7806CV</text>
+<text x="0" y="17.78" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="C">
 <pin name="+" x="-2.54" y="5.08" length="middle" direction="in"/>
@@ -268,6 +271,8 @@ HEATSINK</description>
 <wire x1="12.7" y1="12.7" x2="10.16" y2="10.16" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="5.08" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="94"/>
+<text x="-2.54" y="17.78" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="T-CONN">
 <wire x1="0" y1="0" x2="0" y2="10.16" width="0.254" layer="94"/>
@@ -277,19 +282,23 @@ HEATSINK</description>
 <pin name="BATT+" x="30.48" y="7.62" length="middle" rot="R180"/>
 <pin name="BATT-" x="30.48" y="2.54" length="middle" rot="R180"/>
 <text x="5.08" y="5.08" size="1.27" layer="94">T-CONN</text>
+<text x="0" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="OUTPUT-CONN">
-<pin name="6V1" x="0" y="22.86" length="middle" direction="in"/>
-<pin name="5V1" x="0" y="12.7" length="middle" direction="in"/>
-<pin name="GND0" x="0" y="7.62" length="middle" direction="in"/>
+<pin name="6V2" x="0" y="22.86" length="middle" direction="in"/>
+<pin name="5V2" x="0" y="12.7" length="middle" direction="in"/>
+<pin name="GND1" x="0" y="7.62" length="middle" direction="in"/>
 <wire x1="5.08" y1="30.48" x2="5.08" y2="0" width="0.254" layer="94"/>
 <wire x1="5.08" y1="0" x2="33.02" y2="0" width="0.254" layer="94"/>
 <wire x1="33.02" y1="0" x2="33.02" y2="30.48" width="0.254" layer="94"/>
 <wire x1="33.02" y1="30.48" x2="5.08" y2="30.48" width="0.254" layer="94"/>
-<pin name="6V0" x="0" y="27.94" length="middle" direction="in"/>
-<pin name="5V0" x="0" y="17.78" length="middle" direction="in"/>
-<pin name="GND1" x="0" y="2.54" length="middle" direction="in"/>
+<pin name="6V1" x="0" y="27.94" length="middle" direction="in"/>
+<pin name="5V1" x="0" y="17.78" length="middle" direction="in"/>
+<pin name="GND2" x="0" y="2.54" length="middle" direction="in"/>
 <text x="17.78" y="15.24" size="1.27" layer="94">OUTPUT-CONN</text>
+<text x="5.08" y="33.02" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -367,12 +376,12 @@ HEATSINK</description>
 <devices>
 <device name="" package="OUTPUT-CONN">
 <connects>
-<connect gate="G$1" pin="5V0" pad="5V0"/>
-<connect gate="G$1" pin="5V1" pad="5V1"/>
-<connect gate="G$1" pin="6V0" pad="6V0"/>
-<connect gate="G$1" pin="6V1" pad="6V1"/>
-<connect gate="G$1" pin="GND0" pad="GND0"/>
-<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="5V1" pad="5V0"/>
+<connect gate="G$1" pin="5V2" pad="5V1"/>
+<connect gate="G$1" pin="6V1" pad="6V0"/>
+<connect gate="G$1" pin="6V2" pad="6V1"/>
+<connect gate="G$1" pin="GND1" pad="GND0"/>
+<connect gate="G$1" pin="GND2" pad="GND1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -385,7 +394,11 @@ HEATSINK</description>
 <gate name="G$1" symbol="T-CONN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="T-CONN">
+<connects>
+<connect gate="G$1" pin="BATT+" pad="+"/>
+<connect gate="G$1" pin="BATT-" pad="-"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -400,6 +413,22 @@ HEATSINK</description>
 <device name="" package="C-0.33μF">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C-0.1μF">
+<gates>
+<gate name="G$1" symbol="C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="C-0.1μF">
+<connects>
+<connect gate="G$1" pin="+" pad="＋"/>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
