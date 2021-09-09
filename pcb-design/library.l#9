@@ -247,6 +247,8 @@ HEATSINK</description>
 <text x="2.54" y="5.08" size="1.27" layer="94">15PB054-01050</text>
 <pin name="P$1" x="27.94" y="7.62" length="middle" direction="nc" rot="R180"/>
 <pin name="P$2" x="27.94" y="2.54" length="middle" direction="nc" rot="R180"/>
+<text x="0" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="L7806CV">
 <wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
@@ -257,6 +259,8 @@ HEATSINK</description>
 <pin name="GND" x="33.02" y="7.62" length="middle" direction="out" rot="R180"/>
 <pin name="OUTPUT" x="33.02" y="2.54" length="middle" direction="out" rot="R180"/>
 <text x="5.08" y="7.62" size="1.778" layer="94">L7806CV</text>
+<text x="0" y="17.78" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="C">
 <pin name="+" x="-2.54" y="5.08" length="middle" direction="in"/>
@@ -281,19 +285,23 @@ HEATSINK</description>
 <pin name="BATT+" x="30.48" y="7.62" length="middle" rot="R180"/>
 <pin name="BATT-" x="30.48" y="2.54" length="middle" rot="R180"/>
 <text x="5.08" y="5.08" size="1.27" layer="94">T-CONN</text>
+<text x="0" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="OUTPUT-CONN">
-<pin name="6V1" x="0" y="22.86" length="middle" direction="in"/>
-<pin name="5V1" x="0" y="12.7" length="middle" direction="in"/>
-<pin name="GND0" x="0" y="7.62" length="middle" direction="in"/>
+<pin name="6V2" x="0" y="22.86" length="middle" direction="in"/>
+<pin name="5V2" x="0" y="12.7" length="middle" direction="in"/>
+<pin name="GND1" x="0" y="7.62" length="middle" direction="in"/>
 <wire x1="5.08" y1="30.48" x2="5.08" y2="0" width="0.254" layer="94"/>
 <wire x1="5.08" y1="0" x2="33.02" y2="0" width="0.254" layer="94"/>
 <wire x1="33.02" y1="0" x2="33.02" y2="30.48" width="0.254" layer="94"/>
 <wire x1="33.02" y1="30.48" x2="5.08" y2="30.48" width="0.254" layer="94"/>
-<pin name="6V0" x="0" y="27.94" length="middle" direction="in"/>
-<pin name="5V0" x="0" y="17.78" length="middle" direction="in"/>
-<pin name="GND1" x="0" y="2.54" length="middle" direction="in"/>
+<pin name="6V1" x="0" y="27.94" length="middle" direction="in"/>
+<pin name="5V1" x="0" y="17.78" length="middle" direction="in"/>
+<pin name="GND2" x="0" y="2.54" length="middle" direction="in"/>
 <text x="17.78" y="15.24" size="1.27" layer="94">OUTPUT-CONN</text>
+<text x="5.08" y="33.02" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -371,12 +379,12 @@ HEATSINK</description>
 <devices>
 <device name="" package="OUTPUT-CONN">
 <connects>
-<connect gate="G$1" pin="5V0" pad="5V0"/>
-<connect gate="G$1" pin="5V1" pad="5V1"/>
-<connect gate="G$1" pin="6V0" pad="6V0"/>
-<connect gate="G$1" pin="6V1" pad="6V1"/>
-<connect gate="G$1" pin="GND0" pad="GND0"/>
-<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="5V1" pad="5V0"/>
+<connect gate="G$1" pin="5V2" pad="5V1"/>
+<connect gate="G$1" pin="6V1" pad="6V0"/>
+<connect gate="G$1" pin="6V2" pad="6V1"/>
+<connect gate="G$1" pin="GND1" pad="GND0"/>
+<connect gate="G$1" pin="GND2" pad="GND1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -421,7 +429,11 @@ HEATSINK</description>
 <gate name="G$1" symbol="C" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="C-0.1μF">
+<connects>
+<connect gate="G$1" pin="+" pad="＋"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
