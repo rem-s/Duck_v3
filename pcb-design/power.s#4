@@ -465,29 +465,29 @@ HEATSINK</description>
 </class>
 </classes>
 <parts>
-<part name="U$4" library="library" deviceset="T-CONN" device=""/>
-<part name="CV1" library="library" deviceset="CKCYU1A" device=""/>
-<part name="CV2" library="library" deviceset="CKCYU1A" device=""/>
-<part name="CV3" library="library" deviceset="CKCYU1A" device=""/>
-<part name="U$1" library="library" deviceset="L7806CV" device="" value="11.1V&gt;6V"/>
-<part name="U$2" library="library" deviceset="C-0.33μF" device="" value="0.33μF"/>
-<part name="U$3" library="library" deviceset="C-0.1μF" device="" value="0.1μF"/>
-<part name="U$8" library="library" deviceset="C-100μF" device="" value="100μF"/>
-<part name="U$9" library="library" deviceset="C-100μF" device="" value="100μF"/>
-<part name="U$10" library="library" deviceset="15PB054-01050" device="" value="HEATSINK"/>
-<part name="U$11" library="library" deviceset="L7806CV" device="" value="11.1V&gt;6V"/>
-<part name="U$12" library="library" deviceset="C-0.33μF" device="" value="0.33μF"/>
-<part name="U$13" library="library" deviceset="C-0.1μF" device="" value="0.1μF"/>
-<part name="U$14" library="library" deviceset="C-100μF" device="" value="100μF"/>
-<part name="U$15" library="library" deviceset="C-100μF" device="" value="100μF"/>
-<part name="U$16" library="library" deviceset="15PB054-01050" device="" value="HEATSINK"/>
-<part name="U$17" library="library" deviceset="L7806CV" device="" value="11.1V&gt;6V"/>
-<part name="U$18" library="library" deviceset="C-0.33μF" device="" value="0.33μF"/>
-<part name="U$19" library="library" deviceset="C-0.1μF" device="" value="0.1μF"/>
-<part name="U$20" library="library" deviceset="C-100μF" device="" value="100μF"/>
-<part name="U$21" library="library" deviceset="C-100μF" device="" value="100μF"/>
-<part name="U$22" library="library" deviceset="15PB054-01050" device="" value="HEATSINK"/>
-<part name="U$5" library="library" deviceset="OUTPUT-CONN" device=""/>
+<part name="CONN1" library="library" deviceset="T-CONN" device="" value="INPUT CONNECTOR"/>
+<part name="CV1" library="library" deviceset="CKCYU1A" device="" value="11.1V&gt;5V"/>
+<part name="CV2" library="library" deviceset="CKCYU1A" device="" value="11.1V&gt;5V"/>
+<part name="CV3" library="library" deviceset="CKCYU1A" device="" value="11.1V&gt;5V"/>
+<part name="RGL1" library="library" deviceset="L7806CV" device="" value="11.1V&gt;6V"/>
+<part name="C2" library="library" deviceset="C-0.33μF" device="" value="0.33μF"/>
+<part name="C3" library="library" deviceset="C-0.1μF" device="" value="0.1μF"/>
+<part name="C1" library="library" deviceset="C-100μF" device="" value="100μF"/>
+<part name="C4" library="library" deviceset="C-100μF" device="" value="100μF"/>
+<part name="HS1" library="library" deviceset="15PB054-01050" device="" value="HEATSINK"/>
+<part name="RGL2" library="library" deviceset="L7806CV" device="" value="11.1V&gt;6V"/>
+<part name="C6" library="library" deviceset="C-0.33μF" device="" value="0.33μF"/>
+<part name="C7" library="library" deviceset="C-0.1μF" device="" value="0.1μF"/>
+<part name="C5" library="library" deviceset="C-100μF" device="" value="100μF"/>
+<part name="C8" library="library" deviceset="C-100μF" device="" value="100μF"/>
+<part name="HS2" library="library" deviceset="15PB054-01050" device="" value="HEATSINK"/>
+<part name="RGL3" library="library" deviceset="L7806CV" device="" value="11.1V&gt;6V"/>
+<part name="C10" library="library" deviceset="C-0.33μF" device="" value="0.33μF"/>
+<part name="C11" library="library" deviceset="C-0.1μF" device="" value="0.1μF"/>
+<part name="C9" library="library" deviceset="C-100μF" device="" value="100μF"/>
+<part name="C12" library="library" deviceset="C-100μF" device="" value="100μF"/>
+<part name="HS3" library="library" deviceset="15PB054-01050" device="" value="HEATSINK"/>
+<part name="CONN2" library="library" deviceset="OUTPUT-CONN" device="" value="OUTPUT CONNECTOR"/>
 </parts>
 <sheets>
 <sheet>
@@ -525,7 +525,7 @@ HEATSINK</description>
 <text x="314.96" y="12.7" size="1.778" layer="94">Duck-v3 power supply module</text>
 </plain>
 <instances>
-<instance part="U$4" gate="G$1" x="12.7" y="127" smashed="yes">
+<instance part="CONN1" gate="G$1" x="12.7" y="127" smashed="yes">
 <attribute name="NAME" x="12.7" y="139.7" size="1.778" layer="95"/>
 <attribute name="VALUE" x="12.7" y="124.46" size="1.778" layer="96"/>
 </instance>
@@ -541,79 +541,79 @@ HEATSINK</description>
 <attribute name="NAME" x="95.25" y="129.54" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="95.25" y="149.86" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$1" gate="G$1" x="54.61" y="60.96" smashed="yes">
+<instance part="RGL1" gate="G$1" x="54.61" y="60.96" smashed="yes">
 <attribute name="NAME" x="54.61" y="78.74" size="1.778" layer="95"/>
 <attribute name="VALUE" x="54.61" y="58.42" size="1.778" layer="96"/>
 </instance>
-<instance part="U$2" gate="G$1" x="97.79" y="74.93" smashed="yes">
+<instance part="C2" gate="G$1" x="97.79" y="74.93" smashed="yes">
 <attribute name="NAME" x="95.25" y="92.71" size="1.778" layer="95"/>
 <attribute name="VALUE" x="95.25" y="72.39" size="1.778" layer="96"/>
 </instance>
-<instance part="U$3" gate="G$1" x="97.79" y="48.26" smashed="yes">
+<instance part="C3" gate="G$1" x="97.79" y="48.26" smashed="yes">
 <attribute name="NAME" x="95.25" y="66.04" size="1.778" layer="95"/>
 <attribute name="VALUE" x="95.25" y="45.72" size="1.778" layer="96"/>
 </instance>
-<instance part="U$8" gate="G$1" x="97.79" y="97.79" smashed="yes">
+<instance part="C1" gate="G$1" x="97.79" y="97.79" smashed="yes">
 <attribute name="NAME" x="95.25" y="115.57" size="1.778" layer="95"/>
 <attribute name="VALUE" x="95.25" y="95.25" size="1.778" layer="96"/>
 </instance>
-<instance part="U$9" gate="G$1" x="97.79" y="25.4" smashed="yes">
+<instance part="C4" gate="G$1" x="97.79" y="25.4" smashed="yes">
 <attribute name="NAME" x="95.25" y="43.18" size="1.778" layer="95"/>
 <attribute name="VALUE" x="95.25" y="22.86" size="1.778" layer="96"/>
 </instance>
-<instance part="U$10" gate="G$1" x="54.61" y="35.56" smashed="yes">
+<instance part="HS1" gate="G$1" x="54.61" y="35.56" smashed="yes">
 <attribute name="NAME" x="54.61" y="48.26" size="1.778" layer="95"/>
 <attribute name="VALUE" x="54.61" y="33.02" size="1.778" layer="96"/>
 </instance>
-<instance part="U$11" gate="G$1" x="130.81" y="60.96" smashed="yes">
+<instance part="RGL2" gate="G$1" x="130.81" y="60.96" smashed="yes">
 <attribute name="NAME" x="130.81" y="78.74" size="1.778" layer="95"/>
 <attribute name="VALUE" x="130.81" y="58.42" size="1.778" layer="96"/>
 </instance>
-<instance part="U$12" gate="G$1" x="173.99" y="74.93" smashed="yes">
+<instance part="C6" gate="G$1" x="173.99" y="74.93" smashed="yes">
 <attribute name="NAME" x="171.45" y="92.71" size="1.778" layer="95"/>
 <attribute name="VALUE" x="171.45" y="72.39" size="1.778" layer="96"/>
 </instance>
-<instance part="U$13" gate="G$1" x="173.99" y="48.26" smashed="yes">
+<instance part="C7" gate="G$1" x="173.99" y="48.26" smashed="yes">
 <attribute name="NAME" x="171.45" y="66.04" size="1.778" layer="95"/>
 <attribute name="VALUE" x="171.45" y="45.72" size="1.778" layer="96"/>
 </instance>
-<instance part="U$14" gate="G$1" x="173.99" y="97.79" smashed="yes">
+<instance part="C5" gate="G$1" x="173.99" y="97.79" smashed="yes">
 <attribute name="NAME" x="171.45" y="115.57" size="1.778" layer="95"/>
 <attribute name="VALUE" x="171.45" y="95.25" size="1.778" layer="96"/>
 </instance>
-<instance part="U$15" gate="G$1" x="173.99" y="25.4" smashed="yes">
+<instance part="C8" gate="G$1" x="173.99" y="25.4" smashed="yes">
 <attribute name="NAME" x="171.45" y="43.18" size="1.778" layer="95"/>
 <attribute name="VALUE" x="171.45" y="22.86" size="1.778" layer="96"/>
 </instance>
-<instance part="U$16" gate="G$1" x="130.81" y="35.56" smashed="yes">
+<instance part="HS2" gate="G$1" x="130.81" y="35.56" smashed="yes">
 <attribute name="NAME" x="130.81" y="48.26" size="1.778" layer="95"/>
 <attribute name="VALUE" x="130.81" y="33.02" size="1.778" layer="96"/>
 </instance>
-<instance part="U$17" gate="G$1" x="207.01" y="60.96" smashed="yes">
+<instance part="RGL3" gate="G$1" x="207.01" y="60.96" smashed="yes">
 <attribute name="NAME" x="207.01" y="78.74" size="1.778" layer="95"/>
 <attribute name="VALUE" x="207.01" y="58.42" size="1.778" layer="96"/>
 </instance>
-<instance part="U$18" gate="G$1" x="250.19" y="74.93" smashed="yes">
+<instance part="C10" gate="G$1" x="250.19" y="74.93" smashed="yes">
 <attribute name="NAME" x="247.65" y="92.71" size="1.778" layer="95"/>
 <attribute name="VALUE" x="247.65" y="72.39" size="1.778" layer="96"/>
 </instance>
-<instance part="U$19" gate="G$1" x="250.19" y="48.26" smashed="yes">
+<instance part="C11" gate="G$1" x="250.19" y="48.26" smashed="yes">
 <attribute name="NAME" x="247.65" y="66.04" size="1.778" layer="95"/>
 <attribute name="VALUE" x="247.65" y="45.72" size="1.778" layer="96"/>
 </instance>
-<instance part="U$20" gate="G$1" x="250.19" y="97.79" smashed="yes">
+<instance part="C9" gate="G$1" x="250.19" y="97.79" smashed="yes">
 <attribute name="NAME" x="247.65" y="115.57" size="1.778" layer="95"/>
 <attribute name="VALUE" x="247.65" y="95.25" size="1.778" layer="96"/>
 </instance>
-<instance part="U$21" gate="G$1" x="250.19" y="25.4" smashed="yes">
+<instance part="C12" gate="G$1" x="250.19" y="25.4" smashed="yes">
 <attribute name="NAME" x="247.65" y="43.18" size="1.778" layer="95"/>
 <attribute name="VALUE" x="247.65" y="22.86" size="1.778" layer="96"/>
 </instance>
-<instance part="U$22" gate="G$1" x="207.01" y="35.56" smashed="yes">
+<instance part="HS3" gate="G$1" x="207.01" y="35.56" smashed="yes">
 <attribute name="NAME" x="207.01" y="48.26" size="1.778" layer="95"/>
 <attribute name="VALUE" x="207.01" y="33.02" size="1.778" layer="96"/>
 </instance>
-<instance part="U$5" gate="G$1" x="304.8" y="151.13" smashed="yes">
+<instance part="CONN2" gate="G$1" x="304.8" y="151.13" smashed="yes">
 <attribute name="NAME" x="309.88" y="184.15" size="1.778" layer="95"/>
 <attribute name="VALUE" x="309.88" y="148.59" size="1.778" layer="96"/>
 </instance>
@@ -623,25 +623,25 @@ HEATSINK</description>
 <nets>
 <net name="INPUT" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="INPUT"/>
+<pinref part="RGL1" gate="G$1" pin="INPUT"/>
 <wire x1="87.63" y1="73.66" x2="91.44" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="73.66" x2="91.44" y2="80.01" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="+"/>
+<pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="91.44" y1="80.01" x2="91.44" y2="102.87" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="102.87" x2="95.25" y2="102.87" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="+"/>
+<pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="91.44" y1="80.01" x2="95.25" y2="80.01" width="0.1524" layer="91"/>
 <junction x="91.44" y="80.01"/>
 <wire x1="91.44" y1="102.87" x2="52.07" y2="102.87" width="0.1524" layer="91"/>
 <junction x="91.44" y="102.87"/>
 <label x="54.61" y="105.41" size="1.778" layer="95"/>
-<pinref part="U$11" gate="G$1" pin="INPUT"/>
+<pinref part="RGL2" gate="G$1" pin="INPUT"/>
 <wire x1="163.83" y1="73.66" x2="167.64" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="73.66" x2="167.64" y2="80.01" width="0.1524" layer="91"/>
-<pinref part="U$14" gate="G$1" pin="+"/>
+<pinref part="C5" gate="G$1" pin="+"/>
 <wire x1="167.64" y1="80.01" x2="167.64" y2="102.87" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="102.87" x2="171.45" y2="102.87" width="0.1524" layer="91"/>
-<pinref part="U$12" gate="G$1" pin="+"/>
+<pinref part="C6" gate="G$1" pin="+"/>
 <wire x1="167.64" y1="80.01" x2="171.45" y2="80.01" width="0.1524" layer="91"/>
 <junction x="167.64" y="80.01"/>
 <wire x1="167.64" y1="102.87" x2="128.27" y2="102.87" width="0.1524" layer="91"/>
@@ -650,13 +650,13 @@ HEATSINK</description>
 <wire x1="128.27" y1="102.87" x2="128.27" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="128.27" y1="124.46" x2="52.07" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="52.07" y1="102.87" x2="52.07" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="U$17" gate="G$1" pin="INPUT"/>
+<pinref part="RGL3" gate="G$1" pin="INPUT"/>
 <wire x1="240.03" y1="73.66" x2="243.84" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="73.66" x2="243.84" y2="80.01" width="0.1524" layer="91"/>
-<pinref part="U$20" gate="G$1" pin="+"/>
+<pinref part="C9" gate="G$1" pin="+"/>
 <wire x1="243.84" y1="80.01" x2="243.84" y2="102.87" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="102.87" x2="247.65" y2="102.87" width="0.1524" layer="91"/>
-<pinref part="U$18" gate="G$1" pin="+"/>
+<pinref part="C10" gate="G$1" pin="+"/>
 <wire x1="243.84" y1="80.01" x2="247.65" y2="80.01" width="0.1524" layer="91"/>
 <junction x="243.84" y="80.01"/>
 <wire x1="243.84" y1="102.87" x2="204.47" y2="102.87" width="0.1524" layer="91"/>
@@ -674,7 +674,7 @@ HEATSINK</description>
 <junction x="52.07" y="157.48"/>
 <wire x1="52.07" y1="157.48" x2="52.07" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="52.07" y1="134.62" x2="64.77" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="BATT+"/>
+<pinref part="CONN1" gate="G$1" pin="BATT+"/>
 <wire x1="43.18" y1="134.62" x2="52.07" y2="134.62" width="0.1524" layer="91"/>
 <junction x="52.07" y="134.62"/>
 <wire x1="52.07" y1="134.62" x2="52.07" y2="124.46" width="0.1524" layer="91"/>
@@ -683,12 +683,12 @@ HEATSINK</description>
 </net>
 <net name="OUTPUT" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="OUTPUT"/>
+<pinref part="RGL3" gate="G$1" pin="OUTPUT"/>
 <wire x1="240.03" y1="63.5" x2="243.84" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U$19" gate="G$1" pin="+"/>
+<pinref part="C11" gate="G$1" pin="+"/>
 <wire x1="243.84" y1="63.5" x2="243.84" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="53.34" x2="247.65" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$21" gate="G$1" pin="+"/>
+<pinref part="C12" gate="G$1" pin="+"/>
 <wire x1="243.84" y1="53.34" x2="243.84" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="30.48" x2="247.65" y2="30.48" width="0.1524" layer="91"/>
 <junction x="243.84" y="53.34"/>
@@ -697,12 +697,12 @@ HEATSINK</description>
 <label x="270.51" y="22.86" size="1.778" layer="95"/>
 <wire x1="243.84" y1="20.32" x2="285.75" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="20.32" x2="243.84" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="U$11" gate="G$1" pin="OUTPUT"/>
+<pinref part="RGL2" gate="G$1" pin="OUTPUT"/>
 <wire x1="163.83" y1="63.5" x2="167.64" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U$13" gate="G$1" pin="+"/>
+<pinref part="C7" gate="G$1" pin="+"/>
 <wire x1="167.64" y1="63.5" x2="167.64" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="53.34" x2="171.45" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$15" gate="G$1" pin="+"/>
+<pinref part="C8" gate="G$1" pin="+"/>
 <wire x1="167.64" y1="53.34" x2="167.64" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="30.48" x2="171.45" y2="30.48" width="0.1524" layer="91"/>
 <junction x="167.64" y="53.34"/>
@@ -710,22 +710,22 @@ HEATSINK</description>
 <junction x="167.64" y="30.48"/>
 <label x="194.31" y="22.86" size="1.778" layer="95"/>
 <wire x1="91.44" y1="20.32" x2="167.64" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="OUTPUT"/>
+<pinref part="RGL1" gate="G$1" pin="OUTPUT"/>
 <wire x1="87.63" y1="63.5" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="+"/>
+<pinref part="C3" gate="G$1" pin="+"/>
 <wire x1="91.44" y1="63.5" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="53.34" x2="95.25" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="+"/>
+<pinref part="C4" gate="G$1" pin="+"/>
 <wire x1="91.44" y1="53.34" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="30.48" x2="95.25" y2="30.48" width="0.1524" layer="91"/>
 <junction x="91.44" y="53.34"/>
 <wire x1="91.44" y1="30.48" x2="91.44" y2="20.32" width="0.1524" layer="91"/>
 <junction x="91.44" y="30.48"/>
 <label x="118.11" y="22.86" size="1.778" layer="95"/>
-<pinref part="U$5" gate="G$1" pin="6V2"/>
+<pinref part="CONN2" gate="G$1" pin="6V2"/>
 <wire x1="304.8" y1="173.99" x2="298.45" y2="173.99" width="0.1524" layer="91"/>
 <wire x1="298.45" y1="173.99" x2="298.45" y2="176.53" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="6V1"/>
+<pinref part="CONN2" gate="G$1" pin="6V1"/>
 <wire x1="298.45" y1="176.53" x2="298.45" y2="179.07" width="0.1524" layer="91"/>
 <wire x1="298.45" y1="179.07" x2="304.8" y2="179.07" width="0.1524" layer="91"/>
 <wire x1="285.75" y1="20.32" x2="285.75" y2="176.53" width="0.1524" layer="91"/>
@@ -735,21 +735,21 @@ HEATSINK</description>
 </net>
 <net name="GROUND" class="0">
 <segment>
-<pinref part="U$9" gate="G$1" pin="-"/>
+<pinref part="C4" gate="G$1" pin="-"/>
 <wire x1="113.03" y1="30.48" x2="115.57" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="115.57" y1="30.48" x2="115.57" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="-"/>
+<pinref part="C3" gate="G$1" pin="-"/>
 <wire x1="115.57" y1="53.34" x2="113.03" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="RGL1" gate="G$1" pin="GND"/>
 <wire x1="87.63" y1="68.58" x2="115.57" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="115.57" y1="53.34" x2="115.57" y2="68.58" width="0.1524" layer="91"/>
 <junction x="115.57" y="53.34"/>
 <junction x="115.57" y="68.58"/>
-<pinref part="U$8" gate="G$1" pin="-"/>
+<pinref part="C1" gate="G$1" pin="-"/>
 <wire x1="115.57" y1="68.58" x2="115.57" y2="80.01" width="0.1524" layer="91"/>
 <wire x1="115.57" y1="80.01" x2="115.57" y2="102.87" width="0.1524" layer="91"/>
 <wire x1="115.57" y1="102.87" x2="113.03" y2="102.87" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="-"/>
+<pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="113.03" y1="80.01" x2="115.57" y2="80.01" width="0.1524" layer="91"/>
 <junction x="115.57" y="80.01"/>
 <label x="118.11" y="33.02" size="1.778" layer="95"/>
@@ -757,21 +757,21 @@ HEATSINK</description>
 <junction x="115.57" y="30.48"/>
 <wire x1="129.54" y1="30.48" x2="129.54" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="12.7" x2="205.74" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="U$15" gate="G$1" pin="-"/>
+<pinref part="C8" gate="G$1" pin="-"/>
 <wire x1="189.23" y1="30.48" x2="191.77" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="191.77" y1="30.48" x2="191.77" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$13" gate="G$1" pin="-"/>
+<pinref part="C7" gate="G$1" pin="-"/>
 <wire x1="191.77" y1="53.34" x2="189.23" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$11" gate="G$1" pin="GND"/>
+<pinref part="RGL2" gate="G$1" pin="GND"/>
 <wire x1="163.83" y1="68.58" x2="191.77" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="191.77" y1="53.34" x2="191.77" y2="68.58" width="0.1524" layer="91"/>
 <junction x="191.77" y="53.34"/>
 <junction x="191.77" y="68.58"/>
-<pinref part="U$14" gate="G$1" pin="-"/>
+<pinref part="C5" gate="G$1" pin="-"/>
 <wire x1="191.77" y1="68.58" x2="191.77" y2="80.01" width="0.1524" layer="91"/>
 <wire x1="191.77" y1="80.01" x2="191.77" y2="102.87" width="0.1524" layer="91"/>
 <wire x1="191.77" y1="102.87" x2="189.23" y2="102.87" width="0.1524" layer="91"/>
-<pinref part="U$12" gate="G$1" pin="-"/>
+<pinref part="C6" gate="G$1" pin="-"/>
 <wire x1="189.23" y1="80.01" x2="191.77" y2="80.01" width="0.1524" layer="91"/>
 <junction x="191.77" y="80.01"/>
 <label x="194.31" y="33.02" size="1.778" layer="95"/>
@@ -779,28 +779,28 @@ HEATSINK</description>
 <junction x="191.77" y="30.48"/>
 <wire x1="205.74" y1="12.7" x2="205.74" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="12.7" x2="281.94" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="U$21" gate="G$1" pin="-"/>
+<pinref part="C12" gate="G$1" pin="-"/>
 <wire x1="265.43" y1="30.48" x2="267.97" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="267.97" y1="30.48" x2="267.97" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$19" gate="G$1" pin="-"/>
+<pinref part="C11" gate="G$1" pin="-"/>
 <wire x1="267.97" y1="53.34" x2="265.43" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$17" gate="G$1" pin="GND"/>
+<pinref part="RGL3" gate="G$1" pin="GND"/>
 <wire x1="240.03" y1="68.58" x2="267.97" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="267.97" y1="53.34" x2="267.97" y2="68.58" width="0.1524" layer="91"/>
 <junction x="267.97" y="53.34"/>
 <junction x="267.97" y="68.58"/>
-<pinref part="U$20" gate="G$1" pin="-"/>
+<pinref part="C9" gate="G$1" pin="-"/>
 <wire x1="267.97" y1="68.58" x2="267.97" y2="80.01" width="0.1524" layer="91"/>
 <wire x1="267.97" y1="80.01" x2="267.97" y2="102.87" width="0.1524" layer="91"/>
 <wire x1="267.97" y1="102.87" x2="265.43" y2="102.87" width="0.1524" layer="91"/>
-<pinref part="U$18" gate="G$1" pin="-"/>
+<pinref part="C10" gate="G$1" pin="-"/>
 <wire x1="265.43" y1="80.01" x2="267.97" y2="80.01" width="0.1524" layer="91"/>
 <junction x="267.97" y="80.01"/>
 <label x="270.51" y="33.02" size="1.778" layer="95"/>
 <wire x1="267.97" y1="30.48" x2="281.94" y2="30.48" width="0.1524" layer="91"/>
 <junction x="267.97" y="30.48"/>
 <wire x1="281.94" y1="12.7" x2="281.94" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="BATT-"/>
+<pinref part="CONN1" gate="G$1" pin="BATT-"/>
 <pinref part="CV3" gate="G$1" pin="BATT-"/>
 <wire x1="48.26" y1="142.24" x2="64.77" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="CV1" gate="G$1" pin="BATT-"/>
@@ -833,9 +833,9 @@ HEATSINK</description>
 <wire x1="106.68" y1="165.1" x2="106.68" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="142.24" x2="100.33" y2="142.24" width="0.1524" layer="91"/>
 <junction x="106.68" y="165.1"/>
-<pinref part="U$5" gate="G$1" pin="GND2"/>
+<pinref part="CONN2" gate="G$1" pin="GND2"/>
 <wire x1="304.8" y1="153.67" x2="298.45" y2="153.67" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="GND1"/>
+<pinref part="CONN2" gate="G$1" pin="GND1"/>
 <wire x1="298.45" y1="156.21" x2="298.45" y2="158.75" width="0.1524" layer="91"/>
 <wire x1="298.45" y1="158.75" x2="304.8" y2="158.75" width="0.1524" layer="91"/>
 <wire x1="298.45" y1="153.67" x2="298.45" y2="156.21" width="0.1524" layer="91"/>
@@ -845,10 +845,10 @@ HEATSINK</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="5V2"/>
+<pinref part="CONN2" gate="G$1" pin="5V2"/>
 <wire x1="304.8" y1="163.83" x2="298.45" y2="163.83" width="0.1524" layer="91"/>
 <wire x1="298.45" y1="163.83" x2="298.45" y2="166.37" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="5V1"/>
+<pinref part="CONN2" gate="G$1" pin="5V1"/>
 <wire x1="298.45" y1="166.37" x2="298.45" y2="168.91" width="0.1524" layer="91"/>
 <wire x1="298.45" y1="168.91" x2="304.8" y2="168.91" width="0.1524" layer="91"/>
 <junction x="298.45" y="166.37"/>
