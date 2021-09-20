@@ -1084,6 +1084,35 @@ HEATSINK</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="206,1,139.7,182.88,GROUND,,,,,"/>
+<approved hash="206,1,139.7,207.01,GROUND,,,,,"/>
+<approved hash="206,1,139.7,231.14,GROUND,,,,,"/>
+<approved hash="206,1,154.94,34.29,GROUND,,,,,"/>
+<approved hash="206,1,307.34,34.29,GROUND,,,,,"/>
+<approved hash="206,1,231.14,34.29,GROUND,,,,,"/>
+<approved hash="206,1,191.77,52.07,N$4,,,,,"/>
+<approved hash="206,1,267.97,52.07,N$4,,,,,"/>
+<approved hash="206,1,115.57,52.07,N$4,,,,,"/>
+<approved hash="206,1,265.43,139.7,N$5,,,,,"/>
+<approved hash="206,1,265.43,116.84,N$5,,,,,"/>
+<approved hash="206,1,240.03,105.41,N$5,,,,,"/>
+<approved hash="206,1,265.43,90.17,N$5,,,,,"/>
+<approved hash="206,1,265.43,67.31,N$5,,,,,"/>
+<approved hash="206,1,189.23,139.7,N$6,,,,,"/>
+<approved hash="206,1,189.23,116.84,N$6,,,,,"/>
+<approved hash="206,1,163.83,105.41,N$6,,,,,"/>
+<approved hash="206,1,189.23,90.17,N$6,,,,,"/>
+<approved hash="206,1,189.23,67.31,N$6,,,,,"/>
+<approved hash="206,1,113.03,139.7,N$7,,,,,"/>
+<approved hash="206,1,113.03,116.84,N$7,,,,,"/>
+<approved hash="206,1,87.63,105.41,N$7,,,,,"/>
+<approved hash="206,1,113.03,90.17,N$7,,,,,"/>
+<approved hash="206,1,113.03,67.31,N$7,,,,,"/>
+<approved hash="206,1,148.59,219.71,N$10,,,,,"/>
+<approved hash="206,1,148.59,195.58,N$10,,,,,"/>
+<approved hash="206,1,148.59,171.45,N$10,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
