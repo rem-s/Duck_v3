@@ -677,7 +677,7 @@ HEATSINK</description>
 <junction x="52.07" y="124.46"/>
 </segment>
 </net>
-<net name="OUTPUT" class="0">
+<net name="6V" class="0">
 <segment>
 <pinref part="RGL3" gate="G$1" pin="OUTPUT"/>
 <wire x1="240.03" y1="63.5" x2="243.84" y2="63.5" width="0.1524" layer="91"/>
@@ -839,7 +839,7 @@ HEATSINK</description>
 <junction x="298.45" y="156.21"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="5V" class="0">
 <segment>
 <pinref part="CONN2" gate="G$1" pin="5V2"/>
 <wire x1="304.8" y1="163.83" x2="298.45" y2="163.83" width="0.1524" layer="91"/>
