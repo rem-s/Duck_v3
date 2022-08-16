@@ -1,0 +1,7 @@
+CMD_FORWARD = "forward"
+CMD_BACKWARD = "backward"
+CMD_LEFT = "left"
+CMD_RIGHT = "right"
+CMD_CW = "cw"
+CMD_CCW = "ccw"
+CMD_STOP = "stop"

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="map_file" default="2dmap"/>
+    
+    <!-- make sure destination folder exists -->
+    <node pkg="map_server" type="map_saver" name="map_saver" args="-f $(env HOME)/navigation_map/$(arg map_file)">
+        <param name="map" value="/map"/>
+    </node>
+    
+</launch>
