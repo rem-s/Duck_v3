@@ -1,12 +1,17 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import torch
+import os
+import sys
+sys.path.append('/home/pi/Duck_v3')
+sys.path.append('/home/pi/Duck_v3/yolov5')
+from yolov5.models.common import DetectMultiBackend
 # import torch.utils.data
 import numpy as np
 import pandas as pd
 from PIL import Image
 import glob
-import sys
+
 
 header_list = ['xcenter', 'ycenter', 'width', 'height', 'confidence', 'class']
 model_path = './models/yolov5/weights/best.pt'
@@ -36,7 +41,8 @@ def main(model=None):
     # sys.setrecursionlimit(10000)
     if model == None:
         # ----- 物体検出モデルの読み込み
-        model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path)
+        # model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path, device='cpu')
+        model = DetectMultiBackend(weights=model_path, device='cpu')
     
     # dist > 0: 中心から右にずれている -> 左に曲がって修正する
     # dist < 0: 中心から左にずれている -> 右に曲がって修正する
