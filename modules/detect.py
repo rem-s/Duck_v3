@@ -1,7 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import torch
-import os
 import sys
 sys.path.append('/home/pi/Duck_v3')
 sys.path.append('/home/pi/Duck_v3/yolov5')
@@ -12,9 +11,10 @@ import pandas as pd
 from PIL import Image
 import glob
 
-
 header_list = ['xcenter', 'ycenter', 'width', 'height', 'confidence', 'class']
-model_path = './models/yolov5/weights/best.pt'
+#model_path = '/home/pi/Duck_v3/models/weights/model.pt'
+model_path = '/home/pi/Duck_v3/models/weights/best.pt'
+#model_path = './models/weights/model.pth'
 
 def detect(img, model):
     # ----- 検出の実行
@@ -38,11 +38,17 @@ def detect(img, model):
     return dist
 
 def main(model=None):
+    import os
+
     # sys.setrecursionlimit(10000)
+    print(' ***** model_path:', model_path)
+    if not os.path.exists(model_path):
+        print('model does not exist!')
     if model == None:
         # ----- 物体検出モデルの読み込み
-        # model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path, device='cpu')
         model = DetectMultiBackend(weights=model_path, device='cpu')
+        #model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path, device='cpu')
+        #model = torchvision.models.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
     
     # dist > 0: 中心から右にずれている -> 左に曲がって修正する
     # dist < 0: 中心から左にずれている -> 右に曲がって修正する
