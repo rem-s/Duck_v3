@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from Duck.Duck_v3.modules.mechanum_ctl import *
+# from Duck.Duck_v3.modules.mechanum_ctl import *
+from modules.mechanum_ctl import *
 
 def motor(mechanum, turn, coef=0.0005, alpha=20):
     if turn - alpha > 0:

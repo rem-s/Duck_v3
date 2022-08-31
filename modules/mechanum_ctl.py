@@ -18,16 +18,18 @@ class mechanum_ctl:
         self.motor_BL = [21, 22]
         self.motor_BR = [23, 24]
 
-        self.output_pin = output_pins.get(GPIO.model, None)
-        if self.output_pin is None:
-            raise Exception('PWM not supported on this board')
+        #self.output_pin = output_pins.get(GPIO.model, None)
+        #if self.output_pin is None:
+        #    raise Exception('PWM not supported on this board')
+        self.output_pin = [18, 19]
         print("pwm pins", self.output_pin)
 
         # Pin setup:
         # Board pin-numbering scheme
         GPIO.setmode(GPIO.BOARD)
         # Set pin as an output pin with optional initial state of HIGH
-        GPIO.setup(self.output_pin, GPIO.OUT, initial=GPIO.HIGH)
+        GPIO.setup(self.output_pin[0], GPIO.OUT, initial=GPIO.HIGH)
+        GPIO.setup(self.output_pin[1], GPIO.OUT, initial=GPIO.HIGH)
         
         # Set motor pins
         GPIO.setup(self.motor_FL, GPIO.OUT, initial=GPIO.LOW)
@@ -36,12 +38,12 @@ class mechanum_ctl:
         GPIO.setup(self.motor_BR, GPIO.OUT, initial=GPIO.LOW)
         
         # Set frequency of PWM wave
-        self.pwm_front = GPIO.PWM(self.output_pin[0], frequency_hz=490)
-        self.pwm_back = GPIO.PWM(self.output_pin[1], frequency_hz=490)
+        self.pwm_front = GPIO.PWM(self.output_pin[0], 490)
+        self.pwm_back = GPIO.PWM(self.output_pin[1], 490)
 
         self.init_dr = 50
-        self.pwm_front.start(duty_cycle_percent=self.init_dr)
-        self.pwm_back.start(duty_cycle_percent=self.init_dr)
+        self.pwm_front.start(50)
+        self.pwm_back.start(50)
 
     # ----- 車体の制御用の関数
     def FL_fwd(self, speed):
@@ -151,8 +153,36 @@ class mechanum_ctl:
         # p.ChangeFrequency(freq)
         # p.ChangeDutyCycle(val)
 
+    def cleanupSystem(self):
+        self.pwm_front.stop()
+        self.pwm_back.stop()
+        GPIO.cleanup()
+        print("GPIO cleanup finished")
+
 def main():
-    pass
+    import time
+
+    mechanum = mechanum_ctl()
+    
+    mechanum.stop_all()
+    
+    time.sleep(3)
+
+    mechanum.go_fwd(0)
+
+    time.sleep(3)
+
+    mechanum.go_back(0)
+
+    time.sleep(3)
+
+    mechanum.right_turn(0)
+
+    time.sleep(3)
+
+    mechanum.left_turn(0)
+
+    time.sleep(3)
 
 if __name__ == '__main__':
     main()

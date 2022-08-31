@@ -5,19 +5,18 @@
 import cv2
 
 def capture():
-    camera = cv2.VideoCapture(0)
+    camera = cv2.VideoCapture(-1)
 
     ret, frame = camera.read()
 
     camera.release()
     cv2.destroyAllWindows()
 
-    if ret:
-        return frame
-    else:
-        return None
+    return ret, frame
 
 def main():
+    # cam = cv2.VideoCapture(-1)
+    # print(cam.isOpened()) # True
     img = capture()
     cv2.imwrite('test.png', img)
 
